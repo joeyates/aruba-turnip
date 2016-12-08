@@ -1,7 +1,13 @@
-require "aruba/turnip/version"
+module Aruba; end
 
-module Aruba
-  module Turnip
-    # Your code goes here...
-  end
+module Aruba::Turnip
 end
+
+require "turnip/rspec"
+require "aruba/rspec"
+require "aruba/api"
+
+require "aruba/turnip/placeholders"
+require "aruba/turnip/command"
+require "aruba/turnip/file"
+require "aruba/turnip/testing_frameworks"
