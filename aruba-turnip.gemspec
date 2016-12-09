@@ -26,5 +26,6 @@ in projects tested with RSpec and Turnip.
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3"
+  spec.add_development_dependency "simplecov"
   spec.add_development_dependency "turnip"
 end
