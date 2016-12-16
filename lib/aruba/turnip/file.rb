@@ -31,11 +31,9 @@ step '(an/the) executable (named) ":file_name" with:' do |file_name, file_conten
   step %(a file named "#{file_name}" with mode "0755" and with:), file_content
 end
 
-=begin
-step '(a/the) file (named) "([^"]*)" with "([^"]*)"' do |file_name, file_content|
+step '(a/the) file (named) ":file_name" with ":file_content"' do |file_name, file_content|
   write_file(file_name, unescape_text(file_content))
 end
-=end
 
 step '(a/the) file (named) ":file_name" with mode ":file_mode" and with:' do |file_name, file_mode, file_content|
   write_file(file_name, unescape_text(file_content))

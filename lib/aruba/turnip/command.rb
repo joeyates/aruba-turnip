@@ -39,13 +39,21 @@ step 'I run `([^`]*)` in background'do |cmd|
   run(sanitize_text(cmd))
 end
 
-step 'I type "([^"]*)"' do |input|
-  type(unescape_text(input))
+=end
+
+step 'I type :text' do |input|
+  type(input)
+end
+
+step 'I type:' do |input|
+  type(input)
 end
 
 step 'I close the stdin stream' do
   close_input
 end
+
+=begin
 
 step 'I pipe in (?:a|the) file(?: named)? "([^"]*)"' do |file|
   pipe_in_file(file)
