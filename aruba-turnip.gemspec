@@ -22,10 +22,11 @@ in projects tested with RSpec and Turnip.
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "aruba", "~> 0.14"
+  spec.add_dependency "aruba", "~> 0.14"
+  spec.add_dependency "turnip", ">= 3.0.0-beta.5"
+
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3"
   spec.add_development_dependency "simplecov"
-  spec.add_development_dependency "turnip"
 end
