@@ -28,8 +28,8 @@ end
 =end
 
 step 'I run :command interactively' do |cmd|
-  cmd = sanitize_text(cmd)
-  @interactive = run(cmd)
+  sanitized = sanitize_text(cmd)
+  @interactive = run(sanitized)
 end
 
 =begin
