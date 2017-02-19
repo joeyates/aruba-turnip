@@ -1,4 +1,8 @@
+[![Build Status](https://secure.travis-ci.org/joeyates/aruba-turnip.png)][Continuous Integration]
+
 # Aruba::Turnip
+
+[Continuous Integration]: http://travis-ci.org/joeyates/aruba-turnip "Build status by Travis-CI"
 
 This gem provides step definitions suitable for use
 in projects tested with [RSpec](https://github.com/rspec/rspec) and
